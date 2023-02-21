@@ -37,7 +37,7 @@ select
     cast(payment_type as integer) as payment_type,
     {{ get_payment_type_description('payment_type') }} as payment_type_description, 
     cast(congestion_surcharge as numeric) as congestion_surcharge
-from trip_data_all
+from taxi_data_all
 where rn = 1
 
 
