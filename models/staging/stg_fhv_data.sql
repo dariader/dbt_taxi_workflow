@@ -15,8 +15,8 @@ select
     cast(dolocationid as integer) as dropoff_locationid,
 
     -- timestamps
-    cast(tpep_pickup_datetime as timestamp) as pickup_datetime,
-    cast(tpep_dropoff_datetime as timestamp) as dropoff_datetime,
+    cast(pickup_datetime as timestamp) as pickup_datetime,
+    cast(dropoff_datetime as timestamp) as dropoff_datetime,
 
     -- trip info
     SR_Flag,
