@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-    - name: staging
+    - name: taxiworkflow
       #For bigquery:
-      database: taxiworkflow
+      database: taxi_data_all
       loaded_at_field: record_loaded_at
 
       tables:
