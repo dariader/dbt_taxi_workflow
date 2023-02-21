@@ -32,7 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  taxi_data_all:
+  taxi_data_us:
       # Applies to all files under models/.../
       staging:
           materialized: view

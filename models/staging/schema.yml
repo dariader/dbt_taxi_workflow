@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-    - name: taxi_data_all
+    - name: taxi_data_us
       #For bigquery:
       database: taxiworkflow
       loaded_at_field: record_loaded_at
