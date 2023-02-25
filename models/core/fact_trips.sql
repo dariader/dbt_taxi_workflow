@@ -14,8 +14,7 @@ yellow_data as (
 
 trips_unioned as (
     select * from green_data
-    union all
-    select * from yellow_data
+    full outer join yellow_data on green_data.service_type = yellow_data.service_type
 ),
 
 dim_zones as (
