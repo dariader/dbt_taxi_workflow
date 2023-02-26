@@ -34,7 +34,7 @@ select
     -- cast(ehail_fee as numeric) as ehail_fee, Error while reading table: taxiworkflow.taxi_data_us.green_data, error message: Parquet column 'ehail_fee' has type DOUBLE which does not match the target cpp_type INT64.
     -- cast(cast(ehail_fee as string) as numeric) as ehail_fee,
     cast(ehail_fee as decimal) as ehail_fee,
-    cast(0 as numeric) as ehail_fee,
+    -- cast(0 as numeric) as ehail_fee,
     cast(improvement_surcharge as numeric) as improvement_surcharge,
     cast(total_amount as numeric) as total_amount,
     cast(payment_type as integer) as payment_type,
