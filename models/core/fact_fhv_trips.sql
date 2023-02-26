@@ -1,9 +1,4 @@
 {{ config(materialized='table') }}
-"""
--- Similar to what we've done in fact_trips,
--- keep only records with known pickup and dropoff locations entries for pickup and dropoff locations.
--- cli: filter records with pickup time in year 2019.
-"""
 with trips_unioned as (
     select *,
         'fhv' as service_type
